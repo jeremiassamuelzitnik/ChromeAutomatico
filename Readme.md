@@ -2,11 +2,9 @@ Primeramente debemos correr estos comandos:
 
 `
 Install-Module -Name Selenium -force
-`
-`
+
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-`
-`
+
 choco install chromedriver -y
 `
 Tener en cuenta que debemos tener chromedriver actualizado a la misma versión que chrome.
