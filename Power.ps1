@@ -26,7 +26,6 @@ $eleClick = $Chrome.FindElement($by::name('btnK'))
 $eleClick.click()
 
 
-
 #Entramos a la página inutil.
 $Chrome.Navigate().GoToUrl("https://theuselessbutton.com/")
 
