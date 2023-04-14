@@ -20,3 +20,6 @@ Hecho esto ya podemos ejecutar el script.
 
 Tener en cuenta que en Assets debe estar la dll del netframework que tengamos instalado.
 Por defecto se deja la 4.8 (esto es necesario saberlo en caso de no tener Windows actualizado)
+
+
+https://www.youtube.com/watch?v=lRXRRFGGBbk
