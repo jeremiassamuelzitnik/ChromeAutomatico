@@ -11,3 +11,10 @@ Tener en cuenta que debemos tener chromedriver actualizado a la misma versión q
 Para actualizar el chromedriver debemos usar el comando:
 
 choco upgrade chromedriver -y
+
+
+
+Hecho esto ya podemos ejecutar el script.
+
+Tener en cuenta que en Assets debe estar la dll del netframework que tengamos instalado.
+Por defecto se deja la 4.8 (esto es necesario saberlo en caso de no tener windows actualizado)
