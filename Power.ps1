@@ -38,4 +38,4 @@ for ($i = 1 ; $i -le 10 ; $num++)
 $eleClick.click()
 }
 $Chrome.Close()
-$Crome.Quit()
+$Chrome.Quit()
