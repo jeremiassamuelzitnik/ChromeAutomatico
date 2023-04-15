@@ -2,37 +2,40 @@
 #Import-Module $PSScriptRoot\assets\WebDriver.dll
 Add-Type -Path "$PSScriptRoot\assets\WebDriver.dll"
 
-#Decalaramos las variables de conexi髇 y consulta.
+#Decalaramos las variables de conexi贸n y consulta.
 
 $chromeOptions=New-object OpenQA.selenium.chrome.ChromeOptions
 $Chrome=New-Object OpenQA.selenium.chrome.ChromeDriver
 $by=[OpenQA.selenium.by]
 
-#Ejecuci髇:
+#Ejecuci贸n:
 
-#Entramos a la p醙ina (Google).
+#Entramos a la p谩gina (Google).
 $Chrome.Navigate().GoToUrl("http://google.com/")
 
 #Encontramos el cuandro de texto.
 $eleInput = $Chrome.FindElement($by::XPath('//*[@id="APjFqb"]'))
 #Escribimos.
-$eleInput.SendKeys('ACHO!')
+$eleInput.SendKeys('隆CACHO!')
 #Esperamos 1 Francia.
 timeout /t 1
 
-#Encontramos el bot髇.
+#Encontramos el bot贸n.
 $eleClick = $Chrome.FindElement($by::name('btnK'))
 #Damos click
 $eleClick.click()
 
 
-#Entramos a la p醙ina inutil.
+#Entramos a la p谩gina inutil.
 $Chrome.Navigate().GoToUrl("https://theuselessbutton.com/")
 
-#Encontramos el bot髇.
+#Encontramos el bot贸n.
 $eleClick = $Chrome.FindElement($by::id('countButton'))
 
 #Loopeamos el click
-while ($true){
+for ($i = 1 ; $i -le 10 ; $num++)
+{
 $eleClick.click()
 }
+$Chrome.Close()
+$Crome.Quit()
