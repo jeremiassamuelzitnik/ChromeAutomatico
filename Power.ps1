@@ -33,7 +33,7 @@ $Chrome.Navigate().GoToUrl("https://theuselessbutton.com/")
 $eleClick = $Chrome.FindElement($by::id('countButton'))
 
 #Loopeamos el click
-for ($i = 1 ; $i -le 10 ; $num++)
+for ($i = 1 ; $i -le 10 ; $i++)
 {
 $eleClick.click()
 }
